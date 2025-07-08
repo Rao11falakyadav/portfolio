@@ -10,6 +10,7 @@ body {
   background-color: #fff;
   color: #333;
   line-height: 1.6;
+  padding-top: 90px; 
 }
 
 a {
@@ -25,9 +26,14 @@ a {
 
 /* Header */
 .header {
+  position:fixed;
+  top: 0;
+  width: 100%;
   background: #1e1e2f;
   color: #fff;
   padding: 1rem 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -203,4 +209,8 @@ a {
   color: #fff;
   text-align: center;
   padding: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
